@@ -1,0 +1,58 @@
+/* App.css */
+
+.App {
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  position: relative;
+}
+
+.header-tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tab:last-child {
+  margin-right: 0;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.rotating-pictures {
+  position: relative;
+  margin-top: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.rotating-pictures img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.rotating-pictures img.active {
+  opacity: 1;
+}
