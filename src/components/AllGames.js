@@ -1,97 +1,166 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Game from "./Game";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
+import GameDetails from "./GameDetails";
+import gamesData from "./games.json";
+import "./GameDetails.css"; // Import the custom CSS file
+import filterIcon from './filter.png';
+import { useNavigate } from 'react-router-dom';
 
 const AllGamesContainer = styled.div`
-  // Add your styling for the all games container
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 const Title = styled.h2`
   text-align: left;
   margin: 50px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 8px;
+`;
+
+const SubTitle = styled.h2`
+  text-align: left;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+`;
+
+const UnderlinedSpan = styled.span`
+  cursor: pointer;
+  color: #949494;
+  text-decoration: ${props => props.underline ? 'underline' : 'none'};
+`;
+
+const FilterIcon = styled.img`
+  width: 28px;
+  height: 28x;
 `;
 
 const AllGames = () => {
-  // Array of all games
-  const allGames = [
-    // Add all game objects with their respective properties
-    {
-        id: 1,
-        name: "Uncharted 4",
-        imageUrl:
-          "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg",
-      },
-      {
-        id: 2,
-        name: "FIFA 23",
-        imageUrl:
-          "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt6ce962f552812df5/62d6bd83c4f39a1084ff5bef/GettyImages-1409223178.jpg?format=webp",
-      },
-      {
-        id: 3,
-        name: "God Of War",
-        imageUrl:
-          "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/p3pYq0QxntZQREXRVdAzmn1w.png",
-      },
-      {
-        id: 4,
-        name: "Dota 2",
-        imageUrl:
-          "https://www.hdwallpaper.nu/wp-content/uploads/2015/02/dota_2_wallpaper_31.jpg",
-      },
-      {
-        id: 5,
-        name: "Fortnite",
-        imageUrl:
-          "https://i.pinimg.com/564x/9a/34/97/9a349768c6bc553d90ee4585c4a7499b.jpg",
-      },
-      {
-        id: 6,
-        name: "Valorant",
-        imageUrl:
-          "https://i.pinimg.com/564x/93/6b/bc/936bbca6fbe324bffc8b5e9c1a3e739a.jpg",
-      },
-      {
-        id: 7,
-        name: "Rocket League",
-        imageUrl:
-          "https://i.pinimg.com/564x/1c/99/a8/1c99a8c3e84cf0ac74ea919fc2ba4166.jpg",
-      },
-      {
-        id: 8,
-        name: "Apex Legends",
-        imageUrl:
-          "https://i.pinimg.com/564x/8e/fa/d7/8efad7b53c142eee1bea125db3993866.jpg",
-      },
-      {
-        id: 9,
-        name: "Fall Guys",
-        imageUrl:
-          "https://i.pinimg.com/564x/63/6b/6f/636b6fb101da5efa2e69fa197114c47c.jpg",
-      },
-      {
-        id: 10,
-        name: "Battlefield 2042",
-        imageUrl:
-          "https://i.pinimg.com/564x/12/27/fd/1227fd4338ac0c945097b3f10a8a8ad1.jpg",
-      }
-  ];
+  const [games, setGames] = useState([]);
+  const [filteredGames, setFilteredGames] = useState(gamesData);
+  const [filterConsole, setFilterConsole] = useState("");
+  const [filterType, setFilterType] = useState("");
+  const [filterRating, setFilterRating] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setGames(gamesData);
+  }, []);
+
+  const handleFilter = () => {
+    // Apply filters to the games based on filterConsole, filterRelease, and filterType
+    const filtered = games.filter((game) => {
+      const matchConsole = filterConsole ? game.console.includes(filterConsole) : true;
+      const matchType = filterType ? game.type === filterType : true;
+      const matchRating = filterRating ? game.rating >= parseFloat(filterRating) : true;
+      return matchConsole && matchType && matchRating;
+    });
+    setFilteredGames(filtered);
+
+    // Build the query string for the filters
+    const queryString = `?type=${filterType}&console=${filterConsole}&rating=${filterRating}`;
+
+    // Navigate to the new URL with the filters
+    navigate('/all-games' + queryString);
+  };
+
+  const handleResetFilters = () => {
+    // Reset the filter states to their default values
+    setFilterConsole("");
+    setFilterType("");
+    setFilterRating("");
+    // Set filteredGames back to the initial games list to show all games
+    setFilteredGames(gamesData);
+
+    // Navigate back to the original "All Games" page
+    navigate('/all-games');
+  };
 
   return (
     <AllGamesContainer>
-        <Row className="align-items-center mx-2">
+      <Row className="mx-2">
+        <Row className="align-items-center">
+          <Col>
+            <Title>View all games here</Title>
+          </Col>
+        </Row>
+
+        <Col md={2}>
+          <Row>
             <Col>
-                <Title>All Games</Title>
+              <SubTitle>Filter</SubTitle>
             </Col>
-        </Row>
-        <Row className="mx-2">
-            {allGames.map((game) => (
-            <Col key={game.id} xs={6} md={4} lg={3} xl={2} className="mb-4">
+            <Col className="d-flex align-items-center justify-content-end">
+              <FilterIcon src={filterIcon} alt="Filter Icon" />
+            </Col>
+          </Row>
+
+          {/* Filtering Controls */}
+          <Form.Group className="my-4">
+            <Form.Label>Console</Form.Label>
+            <Form.Select  onChange={(e) => setFilterConsole(e.target.value)} value={filterConsole}>
+              <option value="">All Consoles</option>
+              <option value="ps">PlayStation</option>
+              <option value="xbox">Xbox</option>
+              <option value="pc">PC</option>
+            </Form.Select >
+          </Form.Group>
+
+          <Form.Group className="my-4">
+            <Form.Label>Type</Form.Label>
+            <Form.Select onChange={(e) => setFilterType(e.target.value)} value={filterType}>
+              <option value="">All Types</option>
+              <option value="Action">Action</option>
+              <option value="Sports">Sports</option>
+              <option value="FPS">FPS</option>
+              <option value="Open World">Open World</option>
+              {/* Add other types as needed */}
+            </Form.Select >
+          </Form.Group>
+
+          <Form.Group className="my-4">
+            <Form.Label>Rating</Form.Label>
+            <Form.Select onChange={(e) => setFilterRating(e.target.value)} value={filterRating}>
+              <option value="">All Ratings</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </Form.Select>
+          </Form.Group>
+
+          <Row>
+            <Col className="d-flex align-items-center">
+              <UnderlinedSpan onClick={handleResetFilters} underline={true}>
+                Reset
+              </UnderlinedSpan>
+            </Col>
+            <Col className="text-end">
+              <Button onClick={handleFilter} variant="dark">Filter</Button>
+            </Col>
+          </Row>
+        </Col>
+
+        <Col md={10}>
+          <Row className="mx-2">
+            {filteredGames.map((game) => (
+              <Col key={game.id} xs={12} md={3} className="mb-4">
                 <Game id={game.id} name={game.name} imageUrl={game.imageUrl} />
-            </Col>
+              </Col>
             ))}
-        </Row>
+          </Row>
+          <GameDetails games={games} />
+        </Col>
+      </Row>
     </AllGamesContainer>
   );
 };

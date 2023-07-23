@@ -1,0 +1,38 @@
+.title-and-release {
+  display: flex;
+  align-items: flex-end;
+}
+
+.release {
+  margin-left: 10px;
+}
+
+.summary-card {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.summary-card .card-text {
+  margin-top: 10px;
+}
+
+.console-icon{
+  font: 25px;
+}
+
+.card-header {
+  /* Add styles to align items to the right */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-back-to-games {
+  position: absolute;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  z-index: 999; /* Make sure the button appears above everything else */
+}

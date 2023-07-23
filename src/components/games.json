@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Uncharted 4",
+    "release" : "2016",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Action",
+    "rating": "4",
+    "summary" : "In \"Uncharted 4: A Thief's End,\" players embark on an action-adventure journey following the renowned treasure hunter Nathan Drake. Tempted back into the world of adventure by his long-lost brother, Sam, and accompanied by their old friend, Sully, they set out to find the legendary pirate treasure of Henry Avery. The quest takes them across diverse countries, from Scotland to Madagascar and Libertalia. Along the way, they face dangerous mercenaries and uncover dark secrets from Drake's past. The game delves into themes of loyalty, family, and the consequences of obsession, weaving a captivating storyline that serves as a fitting conclusion to the beloved franchise. With stunning visuals, thrilling gameplay, and a compelling narrative, \"Uncharted 4\" immerses players into an unforgettable adventure filled with action, humor, and emotional depth.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg"
+  },
+  {
+    "id": 2,
+    "name": "FIFA 23",
+    "release" : "2022",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Sports",
+    "rating": "4",
+    "summary" : "\"FIFA 23\" continues the tradition of delivering an authentic football simulation experience to players worldwide. With enhanced graphics, smoother gameplay, and improved player animations, the game captures the essence of the sport. Players can choose from an extensive selection of licensed teams and players from around the globe, enabling them to participate in various leagues and tournaments. The game introduces an improved career mode, allowing players to take charge as managers and make strategic decisions both on and off the field. Additionally, \"FIFA 23\" introduces Volta Football, a thrilling street football mode set in various urban locations. With refined gameplay mechanics, updated rosters, and exciting new features, the game remains a go-to title for football enthusiasts seeking to immerse themselves in the world's most popular sport.",
+    "imageUrl": "https://i.pinimg.com/564x/35/04/98/3504983aa150daf92d780683913c1c68.jpg"
+  },
+  {
+    "id": 3,
+    "name": "God Of War",
+    "release" : "2018",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Action",
+    "rating": "5",
+    "summary" : "\"God of War\" brings players on an epic and emotional journey alongside Kratos, the vengeful Spartan warrior, as he navigates the realms of Norse mythology. Accompanied by his son, Atreus, Kratos seeks to fulfill his wife's dying wish while grappling with the burden of his violent past. The game seamlessly blends breathtaking visuals, engrossing storytelling, and intense combat mechanics to create a riveting experience. The bond between father and son becomes the focal point, adding layers of depth to the action-packed narrative. With a focus on character development, exploration, and puzzle-solving, \"God of War\" is a compelling reimagining of the iconic franchise that resonates with both long-time fans and newcomers alike.",
+    "imageUrl": "https://i.pinimg.com/564x/ea/95/48/ea954884090f29fa9e98f12405437f4a.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Dota 2",
+    "release" : "2013",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "5",
+    "summary" : "\"Dota 2\" stands as one of the most popular and enduring multiplayer online battle arena (MOBA) games. Players choose from an extensive roster of heroes, each possessing unique abilities, and compete in teams to destroy the enemy's Ancient. Strategy, teamwork, and precise execution are crucial to achieving victory in intense, strategic battles. The game's dynamic meta continually evolves with balance updates, ensuring a fresh and engaging experience for players. Renowned for its competitive esports scene, \"Dota 2\" hosts prestigious tournaments that draw massive global audiences, further solidifying its place as one of the most influential titles in the esports landscape.",
+    "imageUrl": "https://i.pinimg.com/564x/b0/3a/9a/b03a9ab25a3e9449a6bc4645f97ba213.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Fortnite",
+    "release" : "2017",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "4",
+    "summary" : "\"Fortnite\" rose to prominence as a cultural phenomenon, captivating players of all ages with its inventive gameplay and distinctive art style. The game's primary mode, \"Battle Royale,\" drops players onto an island where they must scavenge for weapons, resources, and build structures to outlast opponents and be the last one standing. The constant stream of content updates, crossovers with pop culture icons, and limited-time events keep the experience fresh and exciting. Additionally, \"Fortnite\" offers creative mode, allowing players to design their worlds and share them with others, fostering a vibrant community of creators. With its combination of shooter mechanics, building elements, and social interaction, \"Fortnite\" remains a groundbreaking title that redefined the gaming landscape.",
+    "imageUrl": "https://i.pinimg.com/564x/9a/34/97/9a349768c6bc553d90ee4585c4a7499b.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Valorant",
+    "release" : "2020",
+    "console" : ["pc"],
+    "type" : "FPS",
+    "rating": "5",
+    "summary" : "\"Valorant\" is a tactical first-person shooter that introduces character-based gameplay. Players join either attackers or defenders, utilizing unique abilities and precise shooting to secure victory. The game's strategic elements and team-oriented focus make it a hit among competitive gaming enthusiasts. With regular updates and a dedication to balancing agents and maps, \"Valorant\" remains an evolving experience that rewards skill and strategy. Designed by Riot Games, the creators of \"League of Legends,\" the game has already established a strong presence in the esports community, attracting professional players and spectators alike.",
+    "imageUrl": "https://i.pinimg.com/564x/93/6b/bc/936bbca6fbe324bffc8b5e9c1a3e739a.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Rocket League",
+    "release" : "2015",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Racing",
+    "rating": "5",
+    "summary" : "\"Rocket League\" offers a unique and exhilarating fusion of soccer and rocket-powered vehicles. Players compete in thrilling matches where they must work together to score goals and outmaneuver opponents. The game's easy-to-learn mechanics and fast-paced gameplay make it enjoyable for both casual and competitive players. With a variety of customization options, players can personalize their cars and showcase their style on the pitch. Regular updates, seasonal events, and competitive tournaments ensure that the game retains its vibrant and engaged community. As an innovative and entertaining multiplayer title, \"Rocket League\" continues to be a smash hit in the gaming world.",
+    "imageUrl": "https://i.pinimg.com/564x/1c/99/a8/1c99a8c3e84cf0ac74ea919fc2ba4166.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Apex Legends",
+    "release" : "2019",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "5",
+    "summary" : "\"Apex Legends\" took the gaming world by storm with its release, quickly amassing a massive player base. Set in the Titanfall universe, the game is a battle royale experience where players form squads and fight to be the last team standing. What sets it apart are the unique hero characters, called Legends, each with their special abilities, offering a tactical layer to the gameplay. Combining smooth gunplay, fast-paced action, and strategic team dynamics, \"Apex Legends\" strikes a satisfying balance between accessibility and depth. With regular content updates, seasons, and a thriving competitive scene, the game continues to thrive as one of the most popular battle royale titles in the industry.",
+    "imageUrl": "https://i.pinimg.com/564x/8e/fa/d7/8efad7b53c142eee1bea125db3993866.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Fall Guys",
+    "release" : "2020",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Party Royale",
+    "rating": "3",
+    "summary" : "\"Fall Guys: Ultimate Knockout\" burst onto the gaming scene as a delightful and chaotic party royale game. Players control charming bean-like characters as they navigate through whimsical and wacky obstacle courses. The goal is to survive multiple rounds and emerge as the last bean standing. Combining elements of platforming, racing, and party games, \"Fall Guys\" offers a lighthearted and accessible multiplayer experience suitable for players of all ages. The game's colorful visuals, zany challenges, and playful gameplay mechanics have made it an instant hit among streamers and content creators, fostering a sense of camaraderie and laughter as players compete for victory.",
+    "imageUrl": "https://i.pinimg.com/564x/63/6b/6f/636b6fb101da5efa2e69fa197114c47c.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Battlefield 2042",
+    "release" : "2021",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "4",
+    "summary" : "\"Battlefield 2042\" takes players to the near-future, where all-out warfare unfolds across vast and dynamic maps. The game introduces a cutting-edge multiplayer experience, featuring up to 128 players in epic battles filled with destruction and chaos. Players can adapt to the ever-changing battlefield through a new Specialist system, each with unique traits and specialties. The dynamic weather system further enhances gameplay, introducing sandstorms, tornadoes, and other natural events that impact strategies. With an emphasis on scale, intensity, and player agency, \"Battlefield 2042\" offers an immersive and adrenaline-fueled FPS experience that pushes the boundaries of what's possible in multiplayer gaming.",
+    "imageUrl": "https://i.pinimg.com/564x/12/27/fd/1227fd4338ac0c945097b3f10a8a8ad1.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Minecraft",
+    "release" : "2011",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Open World",
+    "rating": "4",
+    "summary" : "\"Minecraft\" is a cultural phenomenon, captivating players of all ages with its boundless creativity and endless possibilities. Set in a procedurally generated, blocky world, players can mine resources, build structures, and explore vast landscapes. The game's sandbox nature encourages players to use their imaginations and create their virtual worlds, making it a beloved title for both casual and hardcore gamers alike. From simple structures to complex redstone machinery, the potential for creation is limited only by one's imagination. Additionally, \"Minecraft\" fosters a strong community that shares mods, maps, and custom content, ensuring that players will always find something new to discover in this timeless classic.",
+    "imageUrl": "https://i.pinimg.com/564x/e5/7b/54/e57b54b6916bf1c603b9dfa7b4d072e6.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Red Dead Redemption 2",
+    "release" : "2018",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Open World",
+    "rating": "5",
+    "summary" : "\"Red Dead Redemption 2\" immerses players in the rugged and vast landscapes of the American Wild West, telling the gripping story of Arthur Morgan, an outlaw and member of the Van der Linde gang. The game's stunning visuals, detailed environments, and immersive storytelling create a living and breathing world filled with complex characters and moral dilemmas. Players can engage in a myriad of activities, from robbing trains to hunting wildlife, all while navigating the consequences of their choices. As Arthur's journey unfolds, players are drawn into a tale of redemption, loyalty, and the changing times of the Wild West. With its rich narrative, captivating gameplay, and meticulously crafted open world, \"Red Dead Redemption 2\" is hailed as a masterpiece of storytelling in gaming.",
+    "imageUrl": "https://i.pinimg.com/564x/ab/a5/22/aba52250138cd2b69cc6d511093775c4.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Marvel's Spider-Man",
+    "release" : "2018",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Action",
+    "rating": "3",
+    "summary" : "\"Marvel's Spider-Man\" swings players into the shoes of Peter Parker as the iconic web-slinger. Set in an open-world New York City, the game offers thrilling web-swinging traversal, exhilarating combat, and a captivating narrative. Players face off against classic villains while balancing their responsibilities as both Spider-Man and Peter Parker. The game's attention to detail, stunning visuals, and fluid gameplay mechanics pay homage to the beloved superhero, delivering an authentic and exhilarating Spider-Man experience. As players unravel a new story in the Spider-Man universe, they get to witness the growth of the hero, as he faces challenges that push both his abilities and determination to the limit.",
+    "imageUrl": "https://i.pinimg.com/564x/c0/25/53/c025539aa47012d9436f5b5931ac8a11.jpg"
+  },
+  {
+    "id": 14,
+    "name": "League of Legends",
+    "release" : "2009",
+    "console" : ["pc"],
+    "type" : "Battle",
+    "rating": "5",
+    "summary" : "\"League of Legends\" is a multiplayer online battle arena (MOBA) game that revolutionized the esports landscape. Players form teams and select from a roster of champions, each with their unique abilities and roles, competing in intense 5v5 battles. The game's strategic depth, skill-based gameplay, and regular updates have contributed to its status as a global esports phenomenon. With a thriving competitive scene, major tournaments, and millions of active players, \"League of Legends\" is a staple in the world of competitive gaming, continuously pushing the boundaries of what a successful esports title can achieve.",
+    "imageUrl": "https://i.pinimg.com/564x/d1/b1/1d/d1b11d5e4dbae547ac0d651476cec488.jpg"
+  },
+  {
+    "id": 15,
+    "name": "NBA 2k23",
+    "release" : "2022",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Sports",
+    "rating": "4",
+    "summary" : "\"NBA 2K23\" delivers the most realistic basketball simulation experience to date. With updated rosters, refined gameplay mechanics, and enhanced graphics, the game captures the essence of the sport on and off the court. Players can live out their NBA dreams, compete in thrilling matches, and take part in the immersive MyCareer mode, where they rise from an aspiring rookie to a basketball legend. The game's attention to detail, authenticity, and dedication to replicating the NBA's atmosphere make it a must-have for basketball fans worldwide. Whether playing solo or with friends in online multiplayer modes, \"NBA 2K23\" continues to be the go-to title for those looking to experience the thrill of professional basketball from the comfort of their gaming console.",
+    "imageUrl": "https://i.pinimg.com/564x/69/bb/5b/69bb5bb335d6a3ce3a3806340c715a7c.jpg"
+  },
+  {
+    "id": 16,
+    "name": "NHL 23",
+    "release" : "2022",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "Sports",
+    "rating": "4",
+    "summary" : "\"NHL 23\" offers ice hockey enthusiasts an immersive and realistic gaming experience. With updated rosters, improved gameplay mechanics, and detailed graphics, the game captures the intensity and excitement of the sport. Players can compete as their favorite teams, recreate iconic moments, or take part in the thrilling Be a Pro mode, where they rise through the ranks to become a hockey superstar. The game's commitment to authenticity and its range of gameplay options make it a hit among both casual and dedicated fans of the sport. Whether battling it out in local multiplayer or testing skills in online matches, \"NHL 23\" is a must-play for those looking to experience the thrill of ice hockey from the comfort of their gaming console.",
+    "imageUrl": "https://i.pinimg.com/564x/25/ea/15/25ea1555b5bb9313706661cecd75ca0c.jpg"
+  },
+  {
+    "id": 17,
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "release" : "2017",
+    "console" : ["xbox"],
+    "type" : "Open World",
+    "rating": "5",
+    "summary" : "\"The Legend of Zelda: Breath of the Wild\" is an awe-inspiring open-world adventure that redefines the beloved Zelda franchise. Players take on the role of Link, who awakens from a century-long slumber to save the kingdom of Hyrule from the evil Calamity Ganon. Set in a vast and dynamic world, the game encourages exploration, creative problem-solving, and adaptive gameplay. With the freedom to approach challenges in various ways and a seamless integration of narrative and gameplay, \"Breath of the Wild\" delivers an immersive and emotionally resonant experience. The game's art style, breathtaking landscapes, and innovative mechanics earned it critical acclaim and multiple Game of the Year awards, solidifying its place as one of the most cherished titles in gaming history.",
+    "imageUrl": "https://i.pinimg.com/564x/ea/73/e3/ea73e33f2602cc085c8af5141a84af79.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Call of Duty: Modern Warfare II",
+    "release" : "2022",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "4",
+    "summary" : "\"Call of Duty: Modern Warfare II\" continues the storied franchise's legacy of delivering action-packed and adrenaline-fueled gameplay. The game presents an engaging and cinematic single-player campaign, thrusting players into the heart of modern military conflicts. The gripping story unfolds through a series of intense missions, featuring diverse locations and high-stakes scenarios. Additionally, the game boasts an extensive multiplayer mode, where players can engage in fast-paced, team-based battles across various maps and game modes. With its polished gunplay, customizable loadouts, and regular content updates, \"Modern Warfare II\" offers an immersive and exciting first-person shooter experience that keeps players coming back for more.",
+    "imageUrl": "https://i.pinimg.com/736x/13/2a/be/132abe929b7bde5319784511ae7c4545.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Counter-Strike: Global Offensive",
+    "release" : "2012",
+    "console" : ["pc"],
+    "type" : "FPS",
+    "rating": "5",
+    "summary" : "\"Counter-Strike: Global Offensive\" is a timeless and iconic multiplayer first-person shooter. Players join either the terrorist or counter-terrorist team, engaging in intense, tactical battles across various maps. The game's precision gunplay, teamwork-oriented gameplay, and strategic depth have made it a staple in competitive gaming. With a dedicated esports scene, major tournaments, and a passionate community, \"CS:GO\" remains a top choice for players seeking a skill-based and highly rewarding shooter experience. Regular updates and community-driven content ensure that the game continues to evolve, keeping it fresh and relevant in the ever-changing landscape of competitive gaming.",
+    "imageUrl": "https://i.pinimg.com/564x/79/80/bd/7980bdc2493ac22eb549eae04dcb4dfe.jpg"
+  },
+  {
+    "id": 20,
+    "name": "PlayerUnknown’s Battlegrounds",
+    "release" : "2017",
+    "console" : ["ps", "xbox", "pc"],
+    "type" : "FPS",
+    "rating": "4",
+    "summary" : "\"PlayerUnknown's Battlegrounds\" popularized the battle royale genre and became a gaming phenomenon. Players parachute onto a massive island, scavenging for weapons and gear, while the play area shrinks, forcing intense encounters with other players. The game's dynamic, unpredictable nature keeps each match fresh and exhilarating, creating memorable moments and epic victories. With various maps, solo, duo, and squad modes, \"PUBG\" offers diverse gameplay experiences that cater to different playstyles. As a pioneer of the battle royale genre, the game's impact on gaming culture and its dedicated community have solidified its place as a revolutionary and influential title in the world of online gaming.",
+    "imageUrl": "https://i.pinimg.com/564x/de/ab/84/deab841a84605fb55308affaa294fdae.jpg"
+  }
+]

@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import PropTypes from 'prop-types';
 
 const GameContainer = styled.div`
   display: flex;
@@ -10,7 +12,7 @@ const GameContainer = styled.div`
 `;
 
 const GameImage = styled.img`
-  height: 362px;
+  height: 375px; /* Set your desired fixed height here */
   width: 275px;
   object-fit: cover;
 `;
@@ -21,11 +23,19 @@ const GameName = styled.div`
 
 const Game = ({ id, name, imageUrl }) => {
   return (
-    <GameContainer>
-      <GameImage src={imageUrl} alt={name} />
-      <GameName>{name}</GameName>
-    </GameContainer>
+    <Link to={`/game/${id}`}>
+      <GameContainer>
+        <GameImage src={imageUrl} alt={name} className="img-fluid" />
+        <GameName>{name}</GameName>
+      </GameContainer>
+    </Link>
   );
+};
+
+Game.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
 };
 
 export default Game;
